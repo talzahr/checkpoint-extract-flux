@@ -31,8 +31,8 @@ for filename in os.listdir(directory):
         
         command = [
             "python", extractor, filename,
-            f"{unet_output}{base_filename}_flux_unet.safetensors",
-            f"{non_unet_output}{base_filename}_flux_non_unet.safetensors",
+            f"{unet_output}{base_filename}_{model_type}_unet.safetensors",
+            f"{non_unet_output}{base_filename}_{model_type}_non_unet.safetensors",
             "--model_type", model_type, "--gpu_limit", gpu_limit
         ]
         
