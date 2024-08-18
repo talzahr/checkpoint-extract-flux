@@ -4,6 +4,8 @@ A Simple wrapper script to use with [extract-unet-flux](https://github.com/capta
 
 By default just place this script in a directory where you download checkpoints.
 
+Be sure to modify the `extractor` global (see below) for the location of UNetExtractor.py
+
 Run this script with `python.exe extract-flux.py`. The script will loop through
 the directory and begin extracting any .safetensors files with UNetExtractor.py
 
