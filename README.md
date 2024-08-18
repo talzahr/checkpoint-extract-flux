@@ -3,6 +3,7 @@
 A Simple wrapper script to use with [extract-unet-flux](https://github.com/captainzero93/extract-unet-safetensor).
 
 By default just place this script in a directory where you download checkpoints.
+
 Run this script with `python.exe extract-flux.py`. The script will loop through
 the directory and begin extracting any .safetensors files with UNetExtractor.py
 
@@ -30,5 +31,6 @@ verbose = False
 ```
 
 Be aware that if `auto_delete` is set to *False*, the next time it is run it will extract that checkpoint again. 
-If on a Unix-like system, be sure to change the paths to forward slashes **/**. On Windows use **\\**
+
+If on a Unix-like system, be sure to change the paths to forward slashes `/`. On Windows use `\\`
 since an escape sequence is required for a literal backslash.  
